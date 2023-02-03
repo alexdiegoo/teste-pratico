@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Prático</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="renderListUsers()">
+    <div class="modal-update-user">
+        <form id="formUpdate">
+            <h3>Editar usuario</h3>
+            <div class="input-group">
+                <label for="username">Nome</label>
+                <input name="username" id="username" type="text" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" required>
+            </div>
+            <div class="input-group">
+                <label for="telephone">Telefone</label>
+                <input name="telephone" id="telephone" type="tel" required placeholder="Digite apenas o número">
+            </div>
+    
+            <button class="formButton">Salvar</button>
+            <a id="cancelUpdateForm">Cancelar</a>
+        </form>
+    </div>
+
+    <form id="form">
+        <div class="input-group">
+            <label for="username">Nome</label>
+            <input name="username" id="username" type="text" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required>
+        </div>
+        <div class="input-group">
+            <label for="telephone">Telefone</label>
+            <input name="telephone" id="telephone" type="tel" required placeholder="Digite apenas o número">
+        </div>
+
+        <button class="formButton">Cadastrar</button>
+    </form>
+    
+    <h1>Usuarios cadastrados:</h1>
+    <div class="listUsers">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
